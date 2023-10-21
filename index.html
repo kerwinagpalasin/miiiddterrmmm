@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript CRUD 
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<h1><center>MIDTERM EXAM/SET A</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <input type="number" name="Age" id="Age">
+                    </div>
+                    <div>
+                        <label>Gender</label>
+                        <input type="text" name="Gender" id="Gender">
+                    </div>
+                    <div>
+                        <label>Birthday</label>
+                        <input type="text" name="Birthday" id="Birthday">
+                    </div>
+                    <div>
+                    <label>Course</label>
+                        <input type="text" name="Course" id="Course">
+                        </div>
+                        <div>
+                    <label>School Year</label>
+                        <input type="text" name="School Year" id="SchoolYear">
+                        </div>
+                        <div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Age </th>
+                            <th>Gender</th>
+                            <th>School Year</th>
+                            <th>Student Information</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
